@@ -8,7 +8,7 @@
     
 
     <title>Hexo+github 搭建个人博客 | hequnsky `s Blog</title>
-    <meta name="author" content="imtianx">
+    <meta name="author" content="hequnsky">
     
     <meta name="description" content="hequnsky的个人技术博客">
     
@@ -384,14 +384,14 @@ E:\GitHub\myblog&gt; hexo init    //进行初始化
 <pre><code>hexo s
 </code></pre><p>打开浏览器，输入 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 即可成功打开。<br>到此，你已经成功的弄好博客页面了。</p>
 <hr>
-<h2 id="3、配置到github"><a href="#3、配置到github" class="headerlink" title="3、配置到github"></a>3、配置到github</h2><p>上面生成的 博客页面仅限本机使用，别人无法访问。有服务器的可以把它配置到服务器上。但这里采用的是提交到github，由它托管，就可以方便的访问了。<br>在github 上建立  <strong><em>用户名.github.io</em></strong> 的仓库。如我的github用户名为：txadf,仓库为：<strong>txadf.github.io</strong>  地址为 ：<a href="https://github.com/txadf/txadf.github.io.git" target="_blank" rel="external">https://github.com/txadf/txadf.github.io.git</a><br>然后打开blog 文件夹下的 _config.yml 文件，在最后修改为如下代码：</p>
+<h2 id="3、配置到github"><a href="#3、配置到github" class="headerlink" title="3、配置到github"></a>3、配置到github</h2><p>上面生成的 博客页面仅限本机使用，别人无法访问。有服务器的可以把它配置到服务器上。但这里采用的是提交到github，由它托管，就可以方便的访问了。<br>在github 上建立  <strong><em>用户名.github.io</em></strong> 的仓库。如我的github用户名为：hequnsky,仓库为：<strong>hequnsky.github.io</strong>  地址为 ：<a href="https://github.com/hequnsky/hequnsky.github.io" target="_blank" rel="external">https://github.com/hequnsky/hequnsky.github.io</a><br>然后打开blog 文件夹下的 _config.yml 文件，在最后修改为如下代码：</p>
 <pre><code>deploy:
   type: git
-  repo: https://github.com/txadf/txadf.github.io.git
+  repo: https://github.com/hequnsky/hequnsky.github.io
   branch: master
 </code></pre><p>最后，提交博客文件到gtihub,执行如下命令：</p>
 <pre><code>hexo d
-</code></pre><p>如果不出错，那么就可以在浏览器用 txadf.github.进行访问了。</p>
+</code></pre><p>如果不出错，那么就可以在浏览器用 hequnsky.github.io进行访问了。</p>
 <hr>
 <h2 id="4、hexo-相关命令"><a href="#4、hexo-相关命令" class="headerlink" title="4、hexo 相关命令"></a>4、hexo 相关命令</h2><pre><code>cls             清屏
 hexo clean      清理项目
